@@ -1,0 +1,56 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+By showing which lines wered added and removed (or modified) between the old
+file and the new file, I was able to identify which lines or bugs were
+introduced between both of them.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+I would be able to traceback each piecemeal change made to a file to identify
+changes from one version to the next, and pinpoint which version introduced
+a change that could be causing the bug being investigated.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+One of the pros for automatically saved versions of a given resource is that
+you know you'll have everything backed up automatically, and can check back on
+the history of that resource at any time. The con is that it can make looking
+at the history and understanding the difference between all the saved versions
+confusing. Also, an automatically saved version might be from a random point
+in time when the work on that resource was still in flux, and so restoring it
+could introduce errors in incompleteness of that resource.
+
+On the other hand, manually and explicitly creating a commit means that you'll
+have a version of the resource saved for a specific purpose, and reverting to
+that version should theoretically lead to a complete version of that resource.
+The con to it is that you have to remember to make the commit and apply a good
+rule and logic for when and how often to make commits for that resource.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A feature or function of a program or application can be in combination of
+multiple resources or files working together. In such cases, when creating or
+updating such a feature, multiple resources may be affected. Since we would
+typically want to create a commit that captures a logical change in our
+project, tracking multiple files in a single commit will be very helpful, which
+is why Git provides this feature.
+
+How can you use the commands git log and git diff to view the history of files?
+
+I would use the git log command to see a list of all the commits in the git
+repository, and the use git diff <old> <new> or git diff --stat <old> <new> to
+see the detailed or a summary view of differences between the files in the two
+commits.
+
+How might using version control make you more confident to make changes that could break something?
+
+The fact that I can always revert to a previous state where things were working
+means that I can go ahead and make any changes I like, even if they might break
+something, with the knowledge that I can always revert back to a previous
+functioning commit if I needed to.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I would like to use Git for mostly coding projects so I can track their state
+across history, and easily add new features / revert to previous versions if
+I break something, or need to investigate a bug that was introduced.
