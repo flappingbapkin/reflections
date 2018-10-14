@@ -5,3 +5,14 @@ the metadata related to each file in the containing directory that might get
 tracked for versioning. It is required for git to have the metadata it needs to
 start versioning your files, and performing all other git operations on them
 and the newly created repository.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is an interediatry state containing all the changes I plan to
+commit, whereas the repository holds the various versions of a collection of
+files over time through commits, and a working directory contains the
+actual source files reflected in the master branch. It is valuable to have
+a staging area since, as we make changes, we can pick and choose which parts of
+a change we want to add to a commit as we work through our new feature, and
+change that as needed before making the final decision to commit those changes
+to the repository.
