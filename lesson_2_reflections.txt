@@ -16,3 +16,9 @@ a staging area since, as we make changes, we can pick and choose which parts of
 a change we want to add to a commit as we work through our new feature, and
 change that as needed before making the final decision to commit those changes
 to the repository.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can optionally choose which files from the working directory I want to add to
+the staging area to only include those files related to the logical change
+I want to make.
