@@ -30,3 +30,20 @@ alternative versions of a project or resource that might not need to be part of
 the main course or trajectory of a project. It might also be useful if we need
 to create alternate versions of a project, or versions specific to a timeline
 release / launch date.
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams are helpful in figuring out which branches were created from which
+point in time relative to the master branch. This helps figure out what state
+a new branch was in relative to master, or relative to another branch, before
+additional commits were made within that branch. It also helps to determine the
+reachability from a commit in one branch relative to other commits in the
+master branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together takes all the commits from one branch since their
+earliest common parent, and merges them into the other branch with all of its
+commits since their earliest common parent as well. Once they've merged, the
+first branch no longer exists as its own collection of commit changes as those
+will now have all been merged into the second branch.
