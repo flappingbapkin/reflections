@@ -47,3 +47,12 @@ earliest common parent, and merges them into the other branch with all of its
 commits since their earliest common parent as well. Once they've merged, the
 first branch no longer exists as its own collection of commit changes as those
 will now have all been merged into the second branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+The pros of the automatic merge is that wherever there are unambiguously
+mergeable commits that can be combined, Git just takes of it for you. The
+downside is that when there are ambiguous changes, Git doesn't have any
+additional logic built-in to know how to resolve these, and instead flags it to
+the user to resolve. This is still a huge time saver than manually doing
+merges, however, so makes using Git's automatic merging function worthwhile.
