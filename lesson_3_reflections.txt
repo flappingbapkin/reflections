@@ -23,3 +23,12 @@ reuse that project in a larger project you are working on. You would want to
 use a branch anytime you want to make a change or test a new experimental
 feature from the cloned or local repository, and either merge the changes from
 that branch to the master or discard them if you don't need them in the future.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit of having a copy of the last known state of the remote stored
+locally is that as the remote gets updated by collaborators on a project, I can
+update my local copy by running 'git fetch' and compare that to the branch that
+I'm working on to see what's changing, and pick and choose when I'm ready to
+merge the latest updated remote with my branch, and then push the branch out to
+the remote.
