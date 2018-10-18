@@ -32,3 +32,10 @@ update my local copy by running 'git fetch' and compare that to the branch that
 I'm working on to see what's changing, and pick and choose when I'm ready to
 merge the latest updated remote with my branch, and then push the branch out to
 the remote.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+I would probably use SVN. It might become harder to make code changes or work
+on new features in an environment where mulitple collaborators are making
+active changes to the master repository. Other than that, it wouldn't be much
+more difficult in my opinion.
