@@ -39,3 +39,13 @@ I would probably use SVN. It might become harder to make code changes or work
 on new features in an environment where mulitple collaborators are making
 active changes to the master repository. Other than that, it wouldn't be much
 more difficult in my opinion.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+You would almost always want to make changes in a separate branch rather than
+in master. In addition to isolating whatever work or changes you're
+specifically targeting in your branch, and being able to worry about the
+changing ground below in a master merge in the future, you are also keeping the
+master branch clean, and helping keeping the source of truth for your project
+stable. In a collaborative environment, protecting the master branch via pull
+requests also helps ensure that the master stays stable and consistent.
